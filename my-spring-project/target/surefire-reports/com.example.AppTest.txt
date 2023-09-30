@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.example.AppTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.802 s <<< FAILURE! - in com.example.AppTest
+testAuthenticationWithInvalidPassword(com.example.AppTest)  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.IllegalStateException: springSecurityFilterChain cannot be null. Ensure a Bean with the name springSecurityFilterChain implementing Filter is present or inject the Filter to be used.
+	at com.example.AppTest.setup(AppTest.java:36)
+
+testAuthenticationWithCorrectUsernameAndPassword(com.example.AppTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: springSecurityFilterChain cannot be null. Ensure a Bean with the name springSecurityFilterChain implementing Filter is present or inject the Filter to be used.
+	at com.example.AppTest.setup(AppTest.java:36)
+
