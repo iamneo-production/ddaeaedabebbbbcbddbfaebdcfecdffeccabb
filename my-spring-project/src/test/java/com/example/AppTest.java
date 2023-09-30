@@ -45,11 +45,12 @@ public class AppTest {
                 .andExpect(status().is3xxRedirection())
                 .andExpect(redirectedUrl("/login?error")); // Adjust this based on your login failure behavior
     }
-    @Test
+ @Test
     public void testVisitHome() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk());
     }
+
     @Test
     public void testAuthenticationWithCorrectUsernameAndPassword() throws Exception {
         // Perform login attempt with correct username and password
