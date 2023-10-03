@@ -12,6 +12,5 @@
           <security:form-login
         default-target-url="/admin" /> 
     </security:http>
-
     
 </beans>
